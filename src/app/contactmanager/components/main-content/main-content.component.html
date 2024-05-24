@@ -1,0 +1,33 @@
+<div *ngIf="!school">
+  <mat-spinner></mat-spinner>
+</div>
+<div *ngIf="school">
+  <mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-icon mat-card-avatar svgIcon="school"></mat-icon>
+      <mat-card-title>{{ school.name }}</mat-card-title>
+      <mat-card-subtitle>
+        Registration Date: {{ school.registrationDate | date: 'd LLLL yyyy' }}
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-tab-group>
+        <mat-tab label="Details">
+          <p><strong>Type:</strong> {{ school.type }}</p>
+          <p><strong>Product:</strong> {{ school.product }}</p>
+          <p><strong>County:</strong> {{ school.county }}</p>
+          <p><strong>Contact Information:</strong></p>
+          <ul>
+            <li><strong>Phone:</strong> {{ school.contactInfo.phone }}</li>
+            <li><strong>Email:</strong> {{ school.contactInfo.email }}</li>
+            <li><strong>Address:</strong> {{ school.contactInfo.address }}</li>
+          </ul>
+          <p><strong>Balance:</strong> {{ school.schoolBalance | currency }}</p>
+        </mat-tab>
+        <mat-tab label="Invoices">
+          <app-invoice [invoices]="school.invoices"></app-invoice>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
+  </mat-card>
+</div>

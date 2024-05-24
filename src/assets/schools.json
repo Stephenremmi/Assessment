@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "name": "Greenwood High",
+        "type": "Secondary",
+        "product": "Education Management System",
+        "county": "Nairobi",
+        "registrationDate": "2010-05-20T00:00:00",
+        "contactInfo": {
+            "phone": "+254712345678",
+            "email": "contact@greenwoodhigh.ac.ke",
+            "address": "123 Greenwood Street, Nairobi"
+        },
+        "schoolBalance": 15000,
+        "invoices": [
+            {
+                "id": 1,
+                "title": "Term 1 Fee",
+                "date": "2024-01-15T13:51:05.9570747Z",
+                "amount": 5000,
+                "status": "Paid"
+            },
+            {
+                "id": 2,
+                "title": "Term 2 Fee",
+                "date": "2024-04-10T13:51:05.9570758Z",
+                "amount": 5000,
+                "status": "Pending"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Bright Future Primary",
+        "type": "Primary",
+        "product": "Student Information System",
+        "county": "Kiambu",
+        "registrationDate": "2015-09-12T00:00:00",
+        "contactInfo": {
+            "phone": "+254722345678",
+            "email": "info@brightfuture.ac.ke",
+            "address": "456 Bright Avenue, Kiambu"
+        },
+        "schoolBalance": 3000,
+        "invoices": [
+            {
+                "id": 1,
+                "title": "Term 1 Fee",
+                "date": "2024-01-10T13:51:05.9570747Z",
+                "amount": 3000,
+                "status": "Paid"
+            }
+        ]
+    }
+]
